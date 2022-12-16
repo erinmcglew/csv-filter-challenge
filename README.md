@@ -28,12 +28,12 @@ Rob,Pike,19560101
 Robert,Griesemer,19640609
 ```
 
-**How-To:**
+## How-To:
 From the main folder, use the command: ‘go run .’ in order to run the program.
 The program will ask for a username, password, and the name of the postgresql database to connect to. The database we connect to will contain the person table which we will run the queries on. After connecting to the database, the user will be asked to filter by first_name, last_name, or birth_year. Then, the user will accept a name or year and return all records that match the value for the specified filter.
 
 
-**Assumptions:**
+## Assumptions:
 I created a postgresql database, which I called scoirDB, that contains a table I created named ‘person’. I copied data from person.csv into the person table. I populated person.csv with sample first_name, last_name, and dob values. Note that I used commands in person.sql in order to create/populate the person table. To test with more values, I edited the person table and inserted new records. For example, I connected to the database by running ‘psql -U postgres scoirDB’ on the command line and then I inserted a new record into the person table with ‘insert into person values (‘Michaela’, ‘McGlew’, ‘19990623’);’.
 
 The Go application I created connects to my scoirDB database (which is the database name I give when I run the program) and queries will be run on this person table in scoirDB. Depending on the filter and value specified by the user, certain records from the person table are returned and displayed. 
