@@ -29,7 +29,7 @@ Robert,Griesemer,19640609
 ```
 
 ## How-To:
-From the main folder, use the command: ‘go run .’ in order to run the program.
+From the main folder, use the command: ‘go run .’ or 'go run main.go' in order to run the program.
 The program will ask for a username, password, and the name of the postgresql database to connect to. The database we connect to will contain the person table which we will run the queries on. After connecting to the database, the user will be asked to filter by first_name, last_name, or birth_year. Then, the application will accept a name or year and return all records that match the value for the specified filter.
 
 
