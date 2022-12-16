@@ -32,6 +32,7 @@ Robert,Griesemer,19640609
 From the main folder, use the command: ‘go run .’ or 'go run main.go' in order to run the program.
 
 For use in production, you can use ‘go build’ to create an executable binary which can be distributed. Run ‘go build’ from the main folder- this will automatically compile main.go. An executable called main.exe will be added to the main directory (if on Windows). You can run the executable on Windows by typing ‘main.exe’ in the main directory. On macOS or Linux, the executable will be called main and can be run with ‘./main’. 
+
 Use ‘go install’ to be able to execute the program outside of the source directory. ‘go install’ puts the executable into the $GOPATH/bin directory ($GOPATH is typically the path to the go directory inside your $HOME directory). Be sure to add $GOPATH/bin to the $PATH environment variable. After running ‘go install’ from the source directory (from the main directory), you will now be able to run the program from outside the source directory.
 Reference for building and installing Go programs: https://www.digitalocean.com/community/tutorials/how-to-build-and-install-go-programs 
 
